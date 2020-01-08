@@ -251,11 +251,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\austi\\Desktop\\ClientTrackerCS\\ClientTracker\\TrackerLibrary\\TrackerLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\austi\\Desktop\\CS_ClientTracker\\ClientTracker\\TrackerLibrary\\TrackerLibrary.csproj",
       "projectName": "TrackerLibrary",
-      "projectPath": "C:\\Users\\austi\\Desktop\\ClientTrackerCS\\ClientTracker\\TrackerLibrary\\TrackerLibrary.csproj",
+      "projectPath": "C:\\Users\\austi\\Desktop\\CS_ClientTracker\\ClientTracker\\TrackerLibrary\\TrackerLibrary.csproj",
       "packagesPath": "C:\\Users\\austi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\austi\\Desktop\\ClientTrackerCS\\ClientTracker\\TrackerLibrary\\obj\\",
+      "outputPath": "C:\\Users\\austi\\Desktop\\CS_ClientTracker\\ClientTracker\\TrackerLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -30,6 +30,7 @@
         {
             this.clientSelectedLabel = new System.Windows.Forms.Label();
             this.clientInfo = new System.Windows.Forms.ListBox();
+            this.updateButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // clientSelectedLabel
@@ -51,12 +52,23 @@
             this.clientInfo.Size = new System.Drawing.Size(711, 292);
             this.clientInfo.TabIndex = 3;
             // 
+            // updateButton
+            // 
+            this.updateButton.Location = new System.Drawing.Point(45, 400);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(164, 56);
+            this.updateButton.TabIndex = 4;
+            this.updateButton.Text = "Update Info";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
             // ClientSelected
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 542);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.clientInfo);
             this.Controls.Add(this.clientSelectedLabel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
@@ -71,5 +83,6 @@
 
         private System.Windows.Forms.Label clientSelectedLabel;
         private System.Windows.Forms.ListBox clientInfo;
+        private System.Windows.Forms.Button updateButton;
     }
 }

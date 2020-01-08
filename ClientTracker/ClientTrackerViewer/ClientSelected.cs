@@ -13,17 +13,29 @@ namespace ClientTrackerViewer
 {
     public partial class ClientSelected : Form
     {
-        public ClientSelected()
+        ClientModel selectedClient;
+        public ClientSelected(ClientModel client)
         {
+            selectedClient = client;
             InitializeComponent();
+            clientInfo.Items.Add("First Name: " + client.firstName);
+            clientInfo.Items.Add("Last Name: " + client.lastName);
+            clientInfo.Items.Add("Email: " + client.email);
+            clientInfo.Items.Add("Phone Number: " + client.phoneNumber);
+            if (client.appointment != null)
+            {
+                clientInfo.Items.Add("Appointment: " + client.appointment.date);
+                clientInfo.Items.Add("Description: " + client.appointment.description);
+            }
         }
 
-        public void showInfo(ClientModel client)
+        public ListBox clientInfoBox { get; set; }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
         {
-            clientInfo.Items.Add(client.firstName);
-            clientInfo.Items.Add(client.lastName);
-            clientInfo.Items.Add(client.email);
-            clientInfo.Items.Add(client.phoneNumber);
+            updateForm u = new updateForm(selectedClient, this);
+            u.Show();
+            this.Close();
         }
     }
 }

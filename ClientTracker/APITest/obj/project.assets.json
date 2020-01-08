@@ -760,11 +760,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\austi\\Desktop\\ClientTrackerCS\\ClientTracker\\APITest\\APITest.csproj",
+      "projectUniqueName": "C:\\Users\\austi\\Desktop\\CS_ClientTracker\\ClientTracker\\APITest\\APITest.csproj",
       "projectName": "APITest",
-      "projectPath": "C:\\Users\\austi\\Desktop\\ClientTrackerCS\\ClientTracker\\APITest\\APITest.csproj",
+      "projectPath": "C:\\Users\\austi\\Desktop\\CS_ClientTracker\\ClientTracker\\APITest\\APITest.csproj",
       "packagesPath": "C:\\Users\\austi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\austi\\Desktop\\ClientTrackerCS\\ClientTracker\\APITest\\obj\\",
+      "outputPath": "C:\\Users\\austi\\Desktop\\CS_ClientTracker\\ClientTracker\\APITest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"

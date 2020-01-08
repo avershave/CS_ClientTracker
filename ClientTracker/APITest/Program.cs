@@ -12,18 +12,19 @@ namespace APITest
         {
             var client = new RestClient("http://localhost:8000/");
 
-            var request = new RestRequest("client", Method.GET);
+            var request = new RestRequest("client/{id}", Method.PUT);
 
-            var response = client.Execute(request);
+            request.AddUrlSegment("id", "5e10c80cb51d35536c8b1cbb");
 
-            JObject obs = JObject.Parse(response.Content);
-            JArray obj = (JArray)obs["response"];
-            Console.WriteLine(obj);
-            List<ClientModel> clientList = obj.ToObject<List<ClientModel>>();
-            foreach(var o in clientList)
+            request.AddJsonBody(new
             {
-                Console.WriteLine(o.firstName);
-            }
+                firstName = "Test",
+                lastName = "Test",
+                phoneNumber = "Test",
+                email = "Test"
+            });
+
+            var content = client.Execute(request).Content;
         }
     }
 }
