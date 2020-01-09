@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 
@@ -86,6 +87,39 @@ namespace TrackerLibrary
 
             var response = client.Execute(request);
 
+            JObject obj = JObject.Parse(response.Content);
+
+            MessageModel msg = obj.ToObject<MessageModel>();
+
+            if (!msg.msgError)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool updateAppointment(ClientModel c, DateTime d, DateTime t, string s)
+        {
+            var client = new RestClient("http://localhost:8000/");
+
+            var request = new RestRequest("client/{id}", Method.PUT);
+
+            request.AddUrlSegment("id", c._id);
+
+            AppointmentModel a = new AppointmentModel();
+            t.ToLocalTime();
+            DateTime dt = d.Add(t.TimeOfDay);
+            a.date = dt;
+            a.description = s;
+            c.appointment = a;
+            string jsonRequest = JsonConvert.SerializeObject(c);
+
+            request.AddParameter("application/json; charset=utf-8", jsonRequest, ParameterType.RequestBody);
+
+            var response = client.Execute(request);
             JObject obj = JObject.Parse(response.Content);
 
             MessageModel msg = obj.ToObject<MessageModel>();

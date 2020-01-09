@@ -32,6 +32,7 @@
             this.listClients = new System.Windows.Forms.ListBox();
             this.createButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.apptButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // headerLabel
@@ -67,7 +68,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(254, 608);
+            this.deleteButton.Location = new System.Drawing.Point(286, 607);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(92, 42);
             this.deleteButton.TabIndex = 3;
@@ -75,12 +76,23 @@
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
+            // apptButton
+            // 
+            this.apptButton.Location = new System.Drawing.Point(469, 607);
+            this.apptButton.Name = "apptButton";
+            this.apptButton.Size = new System.Drawing.Size(264, 42);
+            this.apptButton.TabIndex = 4;
+            this.apptButton.Text = "Schedule Appoinment";
+            this.apptButton.UseVisualStyleBackColor = true;
+            this.apptButton.Click += new System.EventHandler(this.ApptButton_Click);
+            // 
             // ClientView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(853, 699);
+            this.Controls.Add(this.apptButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.createButton);
             this.Controls.Add(this.listClients);
@@ -100,6 +112,7 @@
         private System.Windows.Forms.Button createButton;
         public System.Windows.Forms.ListBox listClients;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button apptButton;
     }
 }
 

@@ -36,3 +36,4 @@ C:\Users\austi\Desktop\CS_ClientTracker\ClientTracker\ClientTrackerViewer\obj\De
 C:\Users\austi\Desktop\CS_ClientTracker\ClientTracker\ClientTrackerViewer\obj\Debug\ClientTrackerViewer.pdb
 C:\Users\austi\Desktop\CS_ClientTracker\ClientTracker\ClientTrackerViewer\obj\Debug\ClientTrackerViewer.CreateClientForm.resources
 C:\Users\austi\Desktop\CS_ClientTracker\ClientTracker\ClientTrackerViewer\obj\Debug\ClientTrackerViewer.updateForm.resources
+C:\Users\austi\Desktop\CS_ClientTracker\ClientTracker\ClientTrackerViewer\obj\Debug\ClientTrackerViewer.AppointmentForm.resources

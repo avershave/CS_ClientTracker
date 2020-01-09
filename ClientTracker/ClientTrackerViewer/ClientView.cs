@@ -52,5 +52,11 @@ namespace ClientTrackerViewer
             string firstName = ((ClientModel)e.ListItem).firstName;
             e.Value = lastName + ", " + firstName;
         }
+
+        private void ApptButton_Click(object sender, EventArgs e)
+        {
+            AppointmentForm appointmnetForm = new AppointmentForm((ClientModel)listClients.SelectedItem);
+            appointmnetForm.Show();
+        }
     }
 }
